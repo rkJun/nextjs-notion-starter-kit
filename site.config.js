@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'Today I Learned - rkjun',
-  domain: 'rkjun.com',
+  domain: 'til.rkjun.com',
   author: 'Juntai Park',
 
   // open graph metadata (optional)
