@@ -7,14 +7,14 @@ module.exports = {
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Today I Learned - rkjun',
-  domain: 'til.rkjun.com',
+  name: 'rkjun.com',
+  domain: 'rkjun.com',
   author: 'Juntai Park',
 
   // open graph metadata (optional)
-  description: 'Today I Learned by rkJun',
-  socialImageTitle: 'TIL - rkJun',
-  socialImageSubtitle: 'Today I Learned',
+  description: 'Blog, Today I Learned, Dev log, Dev diary',
+  socialImageTitle: 'rkjun.com',
+  socialImageSubtitle: 'Blog, Today I Learned, Dev log, Dev diary',
 
   // social usernames (optional)
   twitter: 'rkjun',
@@ -23,7 +23,8 @@ module.exports = {
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
+  defaultPageIcon:
+    'https://www.notion.so/image/https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F859969%3Fs%3D400%26u%3D44780fbc19a72937de590798d866d99f11b96c1d%26v%3D4?table=block&id=c7faa2ff-380a-48c3-b2cc-70c60abdcdf3&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -32,7 +33,7 @@ module.exports = {
   imageCDNHost: null,
 
   // Utteranc.es comments via GitHub issue comments (optional)
-  utterancesGitHubRepo: null,
+  utterancesGitHubRepo: 'rkJun/nextjs-notion-starter-kit',
 
   // whether or not to enable support for LQIP preview images (optional)
   // NOTE: this requires you to set up Google Firebase and add the environment
