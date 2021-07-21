@@ -39,7 +39,6 @@ import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
 import { fathomId, fathomConfig } from 'lib/config'
 import * as Fathom from 'fathom-client'
-import initGA from 'lib/ga';
 
 if (typeof window !== 'undefined') {
   bootstrap()
@@ -49,9 +48,6 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   React.useEffect(() => {
-
-    initGA(process.env.GA_APP_ID, router);
-
     if (fathomId) {
       Fathom.load(fathomId, fathomConfig)
 
