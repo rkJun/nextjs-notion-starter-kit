@@ -5,7 +5,7 @@ let ga4react
 
 export async function init(G) {
   if (!GA4React.isInitialized() && G && process.browser) {
-    ga4react = new GA4React(G, { debug_mode: !process.env.production })
+    ga4react = new GA4React(G)
 
     try {
       await ga4react.initialize()

@@ -49,7 +49,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   React.useEffect(() => {
-    init(process.env.GA_APP_ID)
+    init(process.env.NEXT_PUBLIC_GA_ID)
 
     if (fathomId) {
       Fathom.load(fathomId, fathomConfig)
